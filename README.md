@@ -1,1 +1,1 @@
-# Masuyama-lab.github.io
+# masuyama-lab.github.io
