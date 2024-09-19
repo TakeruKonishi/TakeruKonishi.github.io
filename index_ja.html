@@ -31,12 +31,23 @@
     
     <style>
         .background-section {
-            background-image: url('images/back.jpg'); 
-            background-size: cover; 
-            background-position: center; 
-            background-repeat: no-repeat; 
-            opacity: 0.3; 
-            padding: 20px 0; 
+            position: relative; /* 疑似要素を使うためにpositionを相対的に */
+            padding: 20px 0;
+        }
+
+        .background-section::before {
+            content: ""; /* 疑似要素の内容は空 */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('images/background-image.jpg'); /* 背景画像のURL */
+            background-size: cover; /* 画像を全体に広げる */
+            background-position: center; /* 画像を中央に配置 */
+            background-repeat: no-repeat; /* 繰り返さない */
+            opacity: 0.3; /* 背景画像の透明度を設定 */
+            z-index: -1; /* 背景を前面のコンテンツの背面に表示 */
         }
 
         .container.biography-section {
