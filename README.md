@@ -1,1 +1,1 @@
-# https://TakeruKonishi-lab.github.io
+# https://takerukonishi.github.io/index.html
